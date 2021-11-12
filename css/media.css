@@ -1,5 +1,93 @@
     @media (prefers-color-scheme: dark) {
-     :root {
-        --body: #151437;
-        --color: #fff;
+         :root {
+            --body: #151437;
+            --color: #fff;
+            --slogan-bg: #7177fa;
+        }
+        .logo__dark {
+            display: inline-block;
+        }
+        .logo__light {
+            display: none;
+        }
+        .works__tab {
+            box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+        }
+    }
+    
+    @media (max-width: 1199px) {
+        .works__item {
+            width: 50%;
+        }
+        .works__item:nth-of-type(1) .works__tab {
+            border-radius: 8px 0 0 0;
+        }
+        .works__item:nth-of-type(2) .works__tab {
+            border-radius: 0 8px 0 0;
+        }
+        .works__item:nth-of-type(6) .works__tab {
+            border-radius: 0 0 8px 0;
+        }
+        .works__item:nth-of-type(5) .works__tab {
+            border-radius: 0 0 0 8px;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .menu__link {
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .menu__link.button {
+            justify-content: center;
+            max-width: 190px;
+            width: 100%;
+        }
+        .about__content {
+            min-height: auto;
+        }
+        .footer .menu {
+            max-width: none;
+            margin: 0;
+            justify-content: center;
+        }
+        .footer .menu__link {
+            justify-content: center;
+        }
+        .footer {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .about__title {
+            line-height: 120%;
+            font-size: 32px;
+        }
+        .works__item {
+            width: 100% !important;
+        }
+        .works__item:nth-of-type(1) .works__tab {
+            border-radius: 8px 8px 0 0;
+        }
+        .works__item:nth-of-type(2) .works__tab {
+            border-radius: 0 0 0 0;
+        }
+        .works__item:nth-of-type(6) .works__tab {
+            border-radius: 0 0 8px 8px;
+        }
+        .works__item:nth-of-type(5) .works__tab {
+            border-radius: 0 0 0 8px;
+        }
+        .footer .menu__link {
+            font-size: 18px;
+        }
+        .about__btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .rectangle {
+            display: none;
+        }
     }
